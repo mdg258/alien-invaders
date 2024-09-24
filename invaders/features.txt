@@ -1,0 +1,77 @@
+Additional Features:
+
+
+Title Screen
+------------
+Displays the text 'Alien Invaders'
+Created using a GLabel object.
+
+
+Gameplay Instructions
+---------------------
+Displays instructions at top-right of the screen.
+'SPACEBAR' to fire and 'P' to pause game.
+Created using Glabel object, input, and _determinestate() in app.
+
+
+Game Won
+--------
+Changes title text to 'Game Complete' and title color to green.
+Created by determining if all aliens have been destroyed.
+
+
+Game Over
+---------
+Changes title text to 'Game Over' and title color to red.
+Created by determining if player has lost all lives or if aliens passed the defense line.
+
+
+Player Lives
+------------
+Displays player lives at top-left of the screen.
+Changes color based on lives left.
+Green: 3, Yellow: 2, Red: 1
+Created using a GLabel object and helper to determine player lives in _wave.
+
+
+Player Score
+------------
+Displays player score at top-left of the screen.
+Player score increments += 10 for every alien destroyed.
+Created using a GLabel object and helper to determine player score in _wave.
+
+
+Pause Function
+---------------
+Allows player to pause an active game.
+Created using input and _determinestate() in app.
+
+
+Restart Function
+---------------
+Allows player to restart game if game state is STATE_COMPLETE.
+Created using import os, input, and _determinestate() in app.
+
+
+Exit Function
+---------------
+Allows player to exit game if game state is STATE_COMPLETE.
+Created using import os, input, and _determinestate() in app.
+
+
+Sound Effects
+-------------
+Free License sounds downloaded on Mixit as well as assignment-provided sounds.
+- Startup Music
+- In-game Music
+- Alien Destroyed
+- Last Alien Destroyed
+- Ship Destroyed
+- Player Bolt
+- Alien Bolt
+Created using Sound() and .play().
+
+
+
+
+
